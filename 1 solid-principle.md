@@ -9,7 +9,20 @@ single resposibiilty principle : A class should have only a single responsibilit
           a class must be given single resposibility :
             eg : class for database connection
             eg : class for transaction
+	    
+	    
+	    eg : class Employee:
+	    		name
+			id
+			address
+			isEligibleForPromotion() -> not resp of employee so move this to HR dept
+			calculateIncomeTax() -> not responsibility of employee so move this to Finance dept
 
+			class HR:
+				isEligibleForPromotion(Employee e)
+				
+			class FinanceDept:
+				calculateIncomeTax(Employee e)
  
 open closed principle : 
 
